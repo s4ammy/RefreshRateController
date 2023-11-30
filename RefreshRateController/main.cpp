@@ -21,7 +21,7 @@ void update_refresh_rate(DWORD desired_frequency)
         dm.dmDisplayFrequency = desired_frequency;
         LONG result = ChangeDisplaySettingsEx(NULL, &dm, NULL, 0, NULL);
         if (result != DISP_CHANGE_SUCCESSFUL)
-            MessageBox(ghwnd, L"Failed to update refres rate", L"Error", MB_ICONINFORMATION);
+            MessageBox(ghwnd, L"Failed to update refresh rate", L"Error", MB_ICONINFORMATION);
     }
 }
 
